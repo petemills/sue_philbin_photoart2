@@ -31,3 +31,7 @@ $('.nav a').on('click', function(){
         $(".navbar-toggle").trigger( "click" );
     }
 });
+
+$('#blah').on('click', function () {
+    $('#blah2').toggle("slide", { direction: "left" }, 1000);
+});
