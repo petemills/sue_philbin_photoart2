@@ -192,66 +192,61 @@ body {
   background-color: #0096dd;
 }
 /* line 183, style.sass */
-#gallery-container .gallery-nav .btn:active {
-  color: white;
-  background-color: #0096dd;
-}
-/* line 186, style.sass */
 #gallery-container .gallery-row {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: gainsboro;
 }
-/* line 190, style.sass */
+/* line 187, style.sass */
 #gallery-container .thumbnail-row {
   margin-top: 10px;
 }
-/* line 192, style.sass */
+/* line 189, style.sass */
 #gallery-container .thumbnail-row a {
   outline: 0;
 }
-/* line 194, style.sass */
+/* line 191, style.sass */
 #gallery-container .thumbnail-row .thumbnail {
   padding: 3px;
   border-radius: 0;
 }
-/* line 197, style.sass */
+/* line 194, style.sass */
 #gallery-container .thumbnail-row .thumbnail img {
   width: 100%;
 }
 
-/* line 200, style.sass */
+/* line 197, style.sass */
 .image-active {
   border: 3px solid #0096dd;
 }
 
-/* line 205, style.sass */
+/* line 202, style.sass */
 .show-animation.ng-hide-remove {
   -webkit-transition: 1s linear all;
   transition: 1s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 210, style.sass */
+/* line 207, style.sass */
 .show-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 215, style.sass */
+/* line 212, style.sass */
 #contact-container {
   width: 100%;
   background-color: #0096dd;
   padding-bottom: 50px;
   color: white;
 }
-/* line 220, style.sass */
+/* line 217, style.sass */
 #contact-container .contact-title {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 53px;
 }
 
-/* line 226, style.sass */
+/* line 223, style.sass */
 .b {
   border: 1px solid red;
 }
