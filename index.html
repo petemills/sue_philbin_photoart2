@@ -180,20 +180,32 @@
             THIS IS THE JOOCY SLOOT THAT ISN"T WORKING
             THIS IS THE JOOCY SLOOT THAT ISN"T WORKING        
             THIS IS THE JOOCY SLOOT THAT ISN"T WORKING -->
-            <div class="container" ng-controller="ImageController as image" ng-init="image.currentImage=1">
+            <div 
+            class="container" 
+            ng-controller="ImageController as image" 
+            ng-init="image.currentImage=1"
+            >
                 <div class="row gallery-row">
                     <!-- Image 1 -->
-                    <div ng-repeat="(num, im) in image.numImagePairs" class="col-sm-12 show-animation" ng-show="image.isSelected({{num}})">
-                        <img class="img-responsive" src={{im}}></img>
+                    <div 
+                    ng-repeat="(num, im) in image.numImagePairs" 
+                    class="col-sm-12 show-animation" 
+                    ng-show="image.isSelected({{num}})"
+                    >
+                        <img class="img-responsive" ng-src={{im}}></img>
                     </div>
                 </div>
 
                 <div class="row thumbnail-row">
-                    <div ng-repeat="(num, thumb) in image.numThumbPairs" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected({{num}}) }">
+                    <div 
+                    ng-repeat="(num, thumb) in image.numThumbPairs" 
+                    class="col-lg-1 col-sm-2 col-xs-3 thumbnail" 
+                    ng-class="{ 'image-active': image.isSelected({{num}}) }"
+                    >
 
                         <!-- In particular this lil sloot -->
-                        <a href ng-click="$parent.selectImage({{num}})">
-                            <img class="img-responsive" src={{thumb}}></img>
+                        <a href="" ng-click="image.selectImage({{num}})">
+                            <img class="img-responsive" ng-src={{thumb}}></img>
                         </a>
                         <!--  -->
 
