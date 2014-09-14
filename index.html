@@ -11,7 +11,6 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="lib/bootstrap-3.2.0/css/bootstrap.css"/>
         <link rel="stylesheet" href="style.css"/>
-        <script src="http://code.onion.com/fartscroll.js"></script>
         <script src="lib/jquery/jquery-2.1.1.min.js"></script>
         <script src="lib/jquery/jquery-ui.min.js" type="text/javascript"></script>
         <script src="lib/bootstrap-3.2.0/js/bootstrap.js" type="text/javascript"></script>
@@ -176,12 +175,13 @@
 
             <div class="container" ng-controller="ImageController as imageCtrl">
                 <div class="row gallery-row">
-                    <!-- Image 1 -->
+                    <!-- IMAGES -->
                     <div ng-repeat="image in imageCtrl.images" class="col-sm-12 show-animation" ng-show="imageCtrl.isSelected($index)">
                         <img class="img-responsive" ng-src="{{image.src}}"></img>
                     </div>
                 </div>
 
+                <!-- THUMBNAILS -->
                 <div class="row thumbnail-row">
                     <div ng-repeat="image in imageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': imageCtrl.isSelected($index) }">
                         <a href="" ng-click="imageCtrl.selectImage($index)">

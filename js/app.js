@@ -1,7 +1,5 @@
 var app = angular.module('sue-philbin-photoart', ['ngAnimate']);
 
-fartscroll(800);
-
 app.controller("GalleryController", function(){
 	this.currentInfo = 'aboutSue';
 
