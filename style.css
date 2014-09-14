@@ -129,7 +129,7 @@ body {
 #services-container .service-box {
   padding: 20px;
   border: 2px solid #0096dd;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 /* line 140, style.sass */
 #services-container .service-box .service-title {
@@ -172,104 +172,126 @@ body {
 /* line 169, style.sass */
 #gallery-container .gallery-title {
   padding-top: 50px;
+  padding-bottom: 30px;
   font-size: 53px;
-}
-/* line 172, style.sass */
-#gallery-container .gallery-nav {
-  padding-bottom: 50px;
 }
 /* line 174, style.sass */
 #gallery-container .gallery-nav .btn {
+  width: 130px;
   margin-top: 10px;
   font-size: 15px;
-  border-color: #0096dd;
+  border: none;
   border-radius: 0;
   outline: none;
-}
-/* line 180, style.sass */
-#gallery-container .gallery-nav .btn:hover {
   color: white;
-  background-color: #0096dd;
+  border: 1px solid white;
 }
 /* line 183, style.sass */
-#gallery-container .gallery-row {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-/* line 186, style.sass */
-#gallery-container .gallery-row.orange-bg {
+#gallery-container .gallery-nav .btn.vista-btn {
   background-color: #eb7300;
 }
-/* line 188, style.sass */
-#gallery-container .gallery-row.blue-bg {
-  background-color: #0096dd;
-}
-/* line 190, style.sass */
-#gallery-container .gallery-row.purple-bg {
+/* line 185, style.sass */
+#gallery-container .gallery-nav .btn.people-btn {
   background-color: #b645ba;
 }
-/* line 192, style.sass */
+/* line 187, style.sass */
+#gallery-container .gallery-nav .btn.macro-btn {
+  background-color: #0096dd;
+}
+/* line 189, style.sass */
+#gallery-container .gallery-nav .btn:hover {
+  color: #0096dd;
+  border: 1px solid #0096dd;
+  background-color: white;
+}
+/* line 194, style.sass */
+#gallery-container .gallery-row .orange-border {
+  border: 6px solid #eb7300;
+}
+/* line 196, style.sass */
+#gallery-container .gallery-row .blue-border {
+  border: 6px solid #0096dd;
+}
+/* line 198, style.sass */
+#gallery-container .gallery-row .purple-border {
+  border: 6px solid #b645ba;
+}
+/* line 201, style.sass */
+#gallery-container .gallery-row .gallery-heading h3 {
+  font-size: 22px;
+}
+/* line 203, style.sass */
 #gallery-container .thumbnail-row {
   margin-top: 10px;
 }
-/* line 194, style.sass */
+/* line 205, style.sass */
 #gallery-container .thumbnail-row a {
   outline: 0;
 }
-/* line 196, style.sass */
+/* line 207, style.sass */
 #gallery-container .thumbnail-row .thumbnail {
   padding: 3px;
   border-radius: 0;
 }
-/* line 199, style.sass */
+/* line 210, style.sass */
 #gallery-container .thumbnail-row .thumbnail img {
   width: 100%;
 }
 
-/* line 202, style.sass */
-.image-active {
+/* line 213, style.sass */
+.image-active-vista {
+  border: 3px solid #eb7300;
+}
+
+/* line 215, style.sass */
+.image-active-people {
+  border: 3px solid #b645ba;
+}
+
+/* line 217, style.sass */
+.image-active-macro {
   border: 3px solid #0096dd;
 }
 
-/* line 207, style.sass */
+/* line 222, style.sass */
 .show-animation.ng-hide-remove {
   -webkit-transition: 1s linear all;
   transition: 1s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 212, style.sass */
+/* line 227, style.sass */
 .show-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 216, style.sass */
+/* line 231, style.sass */
 .show-gallery-animation.ng-hide-remove {
   -webkit-transition: 3s linear all;
   transition: 3s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 221, style.sass */
+/* line 236, style.sass */
 .show-gallery-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 226, style.sass */
+/* line 241, style.sass */
 #contact-container {
   width: 100%;
   background-color: #0096dd;
   padding-bottom: 50px;
   color: white;
 }
-/* line 231, style.sass */
+/* line 246, style.sass */
 #contact-container .contact-title {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 53px;
 }
 
-/* line 237, style.sass */
+/* line 252, style.sass */
 .b {
   border: 1px solid red;
 }

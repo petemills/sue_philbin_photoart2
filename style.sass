@@ -136,7 +136,7 @@ body
 	.service-box
 		padding: 20px
 		border: 2px solid $blue-col
-		margin-bottom: 10px
+		margin-bottom: 30px
 		.service-title
 			font-size: 30px
 			span
@@ -168,27 +168,38 @@ body
 	padding-bottom: 80px
 	.gallery-title
 		padding-top: 50px
+		padding-bottom: 30px
 		font-size: 53px
 	.gallery-nav
-		padding-bottom: 50px
 		.btn
+			width: 130px
 			margin-top: 10px
 			font-size: 15px
-			border-color: $blue-col
+			border: none
 			border-radius: 0
 			outline: none
-			&:hover
-				color: white
+			color: white
+			border: 1px solid white
+			&.vista-btn
+				background-color: $orange-col
+			&.people-btn
+				background-color: $purple-col
+			&.macro-btn
 				background-color: $blue-col
+			&:hover
+				color: $blue-col
+				border: 1px solid $blue-col
+				background-color: white
 	.gallery-row
-		padding-top: 15px
-		padding-bottom: 15px
-		&.orange-bg
-			background-color: $orange-col
-		&.blue-bg
-			background-color: $blue-col
-		&.purple-bg
-			background-color: $purple-col
+		.orange-border
+			border: 6px solid $orange-col
+		.blue-border
+			border: 6px solid $blue-col
+		.purple-border
+			border: 6px solid $purple-col
+		.gallery-heading
+			h3
+				font-size: 22px
 	.thumbnail-row
 		margin-top: 10px
 		a
@@ -199,7 +210,11 @@ body
 			img
 				width: 100%
 
-.image-active
+.image-active-vista
+	border: 3px solid $orange-col
+.image-active-people
+	border: 3px solid $purple-col
+.image-active-macro
 	border: 3px solid $blue-col
 
 // ANIMATION ///////////////////////////////////////
