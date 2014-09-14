@@ -195,58 +195,81 @@ body {
 #gallery-container .gallery-row {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: gainsboro;
 }
-/* line 187, style.sass */
+/* line 186, style.sass */
+#gallery-container .gallery-row.orange-bg {
+  background-color: #eb7300;
+}
+/* line 188, style.sass */
+#gallery-container .gallery-row.blue-bg {
+  background-color: #0096dd;
+}
+/* line 190, style.sass */
+#gallery-container .gallery-row.purple-bg {
+  background-color: #b645ba;
+}
+/* line 192, style.sass */
 #gallery-container .thumbnail-row {
   margin-top: 10px;
 }
-/* line 189, style.sass */
+/* line 194, style.sass */
 #gallery-container .thumbnail-row a {
   outline: 0;
 }
-/* line 191, style.sass */
+/* line 196, style.sass */
 #gallery-container .thumbnail-row .thumbnail {
   padding: 3px;
   border-radius: 0;
 }
-/* line 194, style.sass */
+/* line 199, style.sass */
 #gallery-container .thumbnail-row .thumbnail img {
   width: 100%;
 }
 
-/* line 197, style.sass */
+/* line 202, style.sass */
 .image-active {
   border: 3px solid #0096dd;
 }
 
-/* line 202, style.sass */
+/* line 207, style.sass */
 .show-animation.ng-hide-remove {
   -webkit-transition: 1s linear all;
   transition: 1s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 207, style.sass */
+/* line 212, style.sass */
 .show-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 212, style.sass */
+/* line 216, style.sass */
+.show-gallery-animation.ng-hide-remove {
+  -webkit-transition: 3s linear all;
+  transition: 3s linear all;
+  display: block !important;
+  opacity: 1;
+}
+/* line 221, style.sass */
+.show-gallery-animation.ng-hide {
+  opacity: 0;
+}
+
+/* line 226, style.sass */
 #contact-container {
   width: 100%;
   background-color: #0096dd;
   padding-bottom: 50px;
   color: white;
 }
-/* line 217, style.sass */
+/* line 231, style.sass */
 #contact-container .contact-title {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 53px;
 }
 
-/* line 223, style.sass */
+/* line 237, style.sass */
 .b {
   border: 1px solid red;
 }

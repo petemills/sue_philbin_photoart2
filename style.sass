@@ -6,9 +6,9 @@ $medium-col: rgb(120,120,120)
 $dark-col: rgb(70,70,70)
 $darker-col: rgb(40,40,40)
 $blue-col: rgb(0, 150, 221)
-$purple-col: rgb(51, 30, 84)
+$purple-col: rgb(182, 69, 186)
 $orange-col: rgb(235, 115, 0)
-$light-orange-col: rgb(255, 149, 0)
+$green-col: rgb(82,214,77)
 
 @mixin site-font-light
 	font-family: "Raleway", sans-serif
@@ -183,7 +183,12 @@ body
 	.gallery-row
 		padding-top: 15px
 		padding-bottom: 15px
-		background-color: $light-col
+		&.orange-bg
+			background-color: $orange-col
+		&.blue-bg
+			background-color: $blue-col
+		&.purple-bg
+			background-color: $purple-col
 	.thumbnail-row
 		margin-top: 10px
 		a
@@ -202,6 +207,15 @@ body
 	&.ng-hide-remove
 		-webkit-transition: 1s linear all
 		transition: 1s linear all
+		display: block !important
+		opacity: 1
+	&.ng-hide
+		opacity: 0
+
+.show-gallery-animation
+	&.ng-hide-remove
+		-webkit-transition: 3s linear all
+		transition: 3s linear all
 		display: block !important
 		opacity: 1
 	&.ng-hide

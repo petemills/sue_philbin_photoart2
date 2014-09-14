@@ -16,6 +16,7 @@
         <script src="lib/bootstrap-3.2.0/js/bootstrap.js" type="text/javascript"></script>
         <script src="lib/angular_js/angular.min.js" type="text/javascript"></script>
         <script src="lib/angular_js/angular-animate.min.js" type="text/javascript"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
         <script src="lib/scrollto/jquery-scrollto.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
     </head>
@@ -146,45 +147,81 @@
             </div>
         </div>
 
-        <div id="gallery-container">
+        <div id="gallery-container" ng-controller="GalleryController as galleryCtrl">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 centered">
                         <div class="gallery-title">
-                            GALLERY
+                            GALLERIES
                         </div>
                     </div>
                 </div>
                 <div class="row gallery-nav">
                     <div class="col-sm-12 centered">
-                        <button href="" class="btn btn-default" id="blah">
-                            Scenery
+                        <button href="" class="btn btn-default" ng-click="galleryCtrl.selectGallery('vista')">
+                            Vista + Wildlife
                         </button>
-                        <button href="" class="btn btn-default">
+                        <button href="" class="btn btn-default" ng-click="galleryCtrl.selectGallery('people')">
                             People + Events
                         </button>
-                        <button href="" class="btn btn-default">
-                            Wildlife + Macro
-                        </button>
-                        <button href="" class="btn btn-default">
-                            Little Books
+                        <button href="" class="btn btn-default" ng-click="galleryCtrl.selectGallery('macro')">
+                            Macro
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="container" ng-controller="ImageController as imageCtrl">
-                <div class="row gallery-row">
+            <!-- VISTA AND WILDLIFE GALLERY -->
+            <div class="container slide-animation" id="vista-gallery" ng-controller="VistaImageController as vistaImageCtrl" ng-show="galleryCtrl.isSelected('vista')">
+                <div class="row gallery-row orange-bg">
                     <!-- IMAGES -->
-                    <div ng-repeat="image in imageCtrl.images" class="col-sm-12 show-animation" ng-show="imageCtrl.isSelected($index)">
+                    <div ng-repeat="image in vistaImageCtrl.images" class="col-sm-12 show-animation" ng-show="vistaImageCtrl.isSelected($index)">
                         <img class="img-responsive" ng-src="{{image.src}}"></img>
                     </div>
                 </div>
-
                 <!-- THUMBNAILS -->
                 <div class="row thumbnail-row">
-                    <div ng-repeat="image in imageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': imageCtrl.isSelected($index) }">
-                        <a href="" ng-click="imageCtrl.selectImage($index)">
+                    <div ng-repeat="image in vistaImageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': vistaImageCtrl.isSelected($index) }">
+                        <a href="" ng-click="vistaImageCtrl.selectImage($index)">
+                            <img class="img-responsive" ng-src="{{image.thumbnail}}"></img>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+
+
+
+            <!-- PEOPLE AND EVENT GALLERY -->
+            <div class="container slide-animation" id="people-gallery" ng-controller="PeopleImageController as peopleImageCtrl" ng-show="galleryCtrl.isSelected('people')">
+                <div class="row gallery-row purple-bg">
+                    <!-- IMAGES -->
+                    <div ng-repeat="image in peopleImageCtrl.images" class="col-sm-12 show-animation" ng-show="peopleImageCtrl.isSelected($index)">
+                        <img class="img-responsive" ng-src="{{image.src}}"></img>
+                    </div>
+                </div>
+                <!-- THUMBNAILS -->
+                <div class="row thumbnail-row">
+                    <div ng-repeat="image in peopleImageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': peopleImageCtrl.isSelected($index) }">
+                        <a href="" ng-click="peopleImageCtrl.selectImage($index)">
+                            <img class="img-responsive" ng-src="{{image.thumbnail}}"></img>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+
+
+            <!-- MACRO GALLERY -->
+            <div class="container slide-animation" id="macro-gallery" ng-controller="MacroImageController as macroImageCtrl" ng-show="galleryCtrl.isSelected('macro')">
+                <div class="row gallery-row blue-bg">
+                    <!-- IMAGES -->
+                    <div ng-repeat="image in macroImageCtrl.images" class="col-sm-12 show-animation" ng-show="macroImageCtrl.isSelected($index)">
+                        <img class="img-responsive" ng-src="{{image.src}}"></img>
+                    </div>
+                </div>
+                <!-- THUMBNAILS -->
+                <div class="row thumbnail-row">
+                    <div ng-repeat="image in macroImageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': macroImageCtrl.isSelected($index) }">
+                        <a href="" ng-click="macroImageCtrl.selectImage($index)">
                             <img class="img-responsive" ng-src="{{image.thumbnail}}"></img>
                         </a>
                     </div>
