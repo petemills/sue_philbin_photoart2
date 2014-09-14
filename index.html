@@ -189,10 +189,14 @@
                 </div>
 
                 <div class="row thumbnail-row">
-                    <div ng-repeat="(num, im) in image.numImagePairs" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected({{num}}) }">
-                        <a href ng-click="image.selectImage({{num}})">
-                            <img class="img-responsive" src={{im}}></img>
+                    <div ng-repeat="(num, thumb) in image.numThumbPairs" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected({{num}}) }">
+
+                        <!-- In particular this lil sloot -->
+                        <a href ng-click="$parent.selectImage({{num}})">
+                            <img class="img-responsive" src={{thumb}}></img>
                         </a>
+                        <!--  -->
+
                     </div>
                 </div>  
             </div>
