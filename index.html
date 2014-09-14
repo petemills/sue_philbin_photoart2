@@ -175,117 +175,21 @@
             <div class="container" ng-controller="ImageController as image" ng-init="image.currentImage=1">
                 <div class="row gallery-row">
                     <!-- Image 1 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(1)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 2 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(2)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 3 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(3)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 4 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(4)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 5 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(5)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 6 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(6)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 7 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(7)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 8 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(8)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 9 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(9)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 10 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(10)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 11 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(11)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
-                    </div>
-                    <!-- Image 12 -->
-                    <div class="col-sm-12 show-animation" ng-show="image.isSelected(12)">
-                        <img class="img-responsive" src="static/images/duck1.jpg"></img>
+                    <div ng-repeat="(num, im) in image.numImagePairs" class="col-sm-12 show-animation" ng-show="image.isSelected({{num}})">
+                        <img class="img-responsive" src={{im}}></img>
                     </div>
                 </div>
 
+                <!-- This doesn't work :/  -->
+                <!--
                 <div class="row thumbnail-row">
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(1) }">
-                        <a href ng-click="image.selectImage(1)">
-                            <img class="img-responsive" src="static/images/thumbnails/beach1_thumb.jpg"></img>
+                    <div ng-repeat="(num, im) in image.numImagePairs" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected({{num}}) }">
+                        <a href ng-click="image.selectImage({{num]}})">
+                            <img class="img-responsive" src={{im}}></img>
                         </a>
                     </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(2) }">
-                        <a href ng-click="image.selectImage(2)">
-                            <img class="img-responsive" src="static/images/thumbnails/beach2_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(3) }">
-                        <a href ng-click="image.selectImage(3)">
-                            <img class="img-responsive" src="static/images/thumbnails/red_flower1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(4) }">
-                        <a href ng-click="image.selectImage(4)">
-                            <img class="img-responsive" src="static/images/thumbnails/mist1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(5) }">
-                        <a href ng-click="image.selectImage(5)">
-                            <img class="img-responsive" src="static/images/thumbnails/white_flower1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(6) }">
-                        <a href ng-click="image.selectImage(6)">
-                            <img class="img-responsive" src="static/images/thumbnails/sea1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(7) }">
-                        <a href ng-click="image.selectImage(7)">
-                            <img class="img-responsive" src="static/images/thumbnails/sea2_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(8) }">
-                        <a href ng-click="image.selectImage(8)">
-                            <img class="img-responsive" src="static/images/thumbnails/pylons1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(9) }">
-                        <a href ng-click="image.selectImage(9)">
-                            <img class="img-responsive" src="static/images/thumbnails/mountains2_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(10) }">
-                        <a href ng-click="image.selectImage(10)">
-                            <img class="img-responsive" src="static/images/thumbnails/green_plant1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(11) }">
-                        <a href ng-click="image.selectImage(11)">
-                            <img class="img-responsive" src="static/images/thumbnails/corromandel1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                    <div class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active': image.isSelected(12) }">
-                        <a href ng-click="image.selectImage(12)">
-                            <img class="img-responsive" src="static/images/thumbnails/poppies1_thumb.jpg"></img>
-                        </a>
-                    </div>
-                </div>
+                </div>  
+                -->
             </div>
         </div>
 
