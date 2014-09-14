@@ -33,11 +33,9 @@ app.controller("ImageController", function(){
 	];
 
 	this.selectImage = function(imageIndex) {
-		console.log(imageIndex);
 		this.currentImageIndex = imageIndex;
 	};
 	this.isSelected = function(imageIndex) {
-		console.log("iss " + imageIndex);
 		return this.currentImageIndex === imageIndex;
 	};
 });
