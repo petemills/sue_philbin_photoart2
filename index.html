@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <div id="gallery-container" ng-controller="ImageController as image" ng-init="image.currentImage=1">
+        <div id="gallery-container">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 centered">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" ng-controller="ImageController as image" ng-init="image.currentImage=1">
                 <div class="row gallery-row">
                     <!-- Image 1 -->
                     <div class="col-sm-12 show-animation" ng-show="image.isSelected(1)">
