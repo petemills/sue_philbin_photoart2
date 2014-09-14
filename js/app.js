@@ -14,9 +14,6 @@ app.controller("GalleryController", function(){
 app.controller("ImageController", function(){
 	this.currentImageIndex = 0;
 
-	// The numbers will match up between images and thumbnails eventually
-	// i.e 1: "static/images/cow1.jpg",
-	// 	   1: "static/images/thumbnails/cow1_thumb.jpg",
 	this.images = [
 		{src: "static/images/duck1.jpg", thumbnail: "static/images/thumbnails/mountains1_thumb.jpg"},
 		{src: "static/images/duck1.jpg", thumbnail: "static/images/thumbnails/mountains1_thumb.jpg"},
