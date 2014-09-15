@@ -78,11 +78,11 @@ body {
 
 /* line 106, style.sass */
 .hero-container {
-  background: -moz-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/white_flower.jpg");
-  background: -webkit-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/white_flower.jpg");
-  background: -o-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/white_flower.jpg");
-  background: -ms-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/white_flower.jpg");
-  background: linear-gradient(to left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/white_flower.jpg");
+  background: -moz-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
+  background: -o-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
+  background: -ms-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
+  background: linear-gradient(to left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
   background-attachment: fixed, fixed;
   width: 100%;
 }
@@ -177,7 +177,7 @@ body {
 }
 /* line 174, style.sass */
 #gallery-container .gallery-nav .btn {
-  width: 130px;
+  width: 150px;
   margin-top: 10px;
   font-size: 15px;
   border: none;
@@ -191,7 +191,7 @@ body {
   background-color: #eb7300;
 }
 /* line 185, style.sass */
-#gallery-container .gallery-nav .btn.people-btn {
+#gallery-container .gallery-nav .btn.books-btn {
   background-color: #b645ba;
 }
 /* line 187, style.sass */
@@ -244,7 +244,7 @@ body {
 }
 
 /* line 215, style.sass */
-.image-active-people {
+.image-active-books {
   border: 3px solid #b645ba;
 }
 

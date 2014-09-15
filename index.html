@@ -159,13 +159,13 @@
                 <div class="row gallery-nav">
                     <div class="col-sm-12 centered">
                         <button href="" class="btn btn-default vista-btn" ng-click="galleryCtrl.selectGallery('vista')">
-                            Vista + Wildlife
+                            Vistas + People
                         </button>
-                        <button href="" class="btn btn-default people-btn" ng-click="galleryCtrl.selectGallery('people')">
-                            People + Events
+                        <button href="" class="btn btn-default books-btn" ng-click="galleryCtrl.selectGallery('books')">
+                            Little Books
                         </button>
                         <button href="" class="btn btn-default macro-btn" ng-click="galleryCtrl.selectGallery('macro')">
-                            Macro
+                            Macro + Wildlife
                         </button>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
             <div class="container slide-animation" id="vista-gallery" ng-controller="VistaImageController as vistaImageCtrl" ng-show="galleryCtrl.isSelected('vista')">
                 <div class="row">
                     <div class="col-sm-12 gallery-heading centered">
-                        <h3>VISTAS AND WILDLIFE</h3>
+                        <h3>VISTAS AND PEOPLE</h3>
                     </div>
                 </div>
                 <div class="row gallery-row">
@@ -197,22 +197,22 @@
 
 
             <!-- PEOPLE AND EVENT GALLERY -->
-            <div class="container slide-animation" id="people-gallery" ng-controller="PeopleImageController as peopleImageCtrl" ng-show="galleryCtrl.isSelected('people')">
+            <div class="container slide-animation" id="books-gallery" ng-controller="BooksImageController as booksImageCtrl" ng-show="galleryCtrl.isSelected('books')">
                 <div class="row">
                     <div class="col-sm-12 gallery-heading centered">
-                        <h3>PEOPLE AND EVENTS</h3>
+                        <h3>MY LITTLE BOOKS</h3>
                     </div>
                 </div>
                 <div class="row gallery-row">
                     <!-- IMAGES -->
-                    <div ng-repeat="image in peopleImageCtrl.images" class="col-lg-10 col-lg-offset-1 show-animation" ng-show="peopleImageCtrl.isSelected($index)">
+                    <div ng-repeat="image in booksImageCtrl.images" class="col-lg-10 col-lg-offset-1 show-animation" ng-show="booksImageCtrl.isSelected($index)">
                         <img class="img-responsive purple-border" ng-src="{{image.src}}"></img>
                     </div>
                 </div>
                 <!-- THUMBNAILS -->
                 <div class="row thumbnail-row">
-                    <div ng-repeat="image in peopleImageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active-people': peopleImageCtrl.isSelected($index) }">
-                        <a href="" ng-click="peopleImageCtrl.selectImage($index)">
+                    <div ng-repeat="image in booksImageCtrl.images" class="col-lg-1 col-sm-2 col-xs-3 thumbnail" ng-class="{ 'image-active-books': booksImageCtrl.isSelected($index) }">
+                        <a href="" ng-click="booksImageCtrl.selectImage($index)">
                             <img class="img-responsive" ng-src="{{image.thumbnail}}"></img>
                         </a>
                     </div>
@@ -224,7 +224,7 @@
             <div class="container slide-animation" id="macro-gallery" ng-controller="MacroImageController as macroImageCtrl" ng-show="galleryCtrl.isSelected('macro')">
                 <div class="row">
                     <div class="col-sm-12 gallery-heading centered">
-                        <h3>MACRO</h3>
+                        <h3>MACRO AND WILDLIFE</h3>
                     </div>
                 </div>
                 <div class="row gallery-row">
