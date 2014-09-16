@@ -16,7 +16,6 @@
         <script src="lib/bootstrap-3.2.0/js/bootstrap.js" type="text/javascript"></script>
         <script src="lib/angular_js/angular.min.js" type="text/javascript"></script>
         <script src="lib/angular_js/angular-animate.min.js" type="text/javascript"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
         <script src="lib/scrollto/jquery-scrollto.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
     </head>
@@ -36,21 +35,27 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li>
+                            <a href id="about-link">
+                                <span class="glyphicon glyphicon-user"> </span>
+                                About Me
+                            </a>
+                        </li>
+                        <li class="left-border">
                             <a href id="services-link">
                                 <span class="glyphicon glyphicon-camera"> </span>
                                 Services
                             </a>
                         </li>
                         <li class="left-border">
-                            <a href id="pricing-link">
-                                <span class="glyphicon glyphicon-usd"> </span>
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="left-border">
                             <a href id="gallery-link">
                                 <span class="glyphicon glyphicon-th-large"> </span>
                                 Gallery
+                            </a>
+                        </li>
+                        <li class="left-border">
+                            <a href id="pricing-link">
+                                <span class="glyphicon glyphicon-usd"> </span>
+                                Pricing
                             </a>
                         </li>
                         <li class="left-border">
@@ -85,6 +90,41 @@
             </div>
         </div>
 
+        <div id="about-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 centered">
+                        <div class="about-title">
+                            ME AND MY PHOTOS
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="about-box-1">
+                            <div class="about-box-title"> ME </div>
+                            <hr>
+                            <p>
+                                I'm a freelance photographer living in glorious New Zealand. Down here we have an abundance of stunning vistas and gorgeous backdrops, making photography a wonderfully rewarding acivity. I live in the Waikato with my family anfd like nothing more than venturing off into the unknown, camera in hand and dogs by my side!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="about-box-2">
+                            <div class="about-box-title"> MY PHOTOS </div>
+                            <hr>
+                            <p>
+                                I take photographs with a few core idioms:<br><br>
+                                <span class="glyphicon glyphicon-minus"></span> Keep it clean<br><br>
+                                <span class="glyphicon glyphicon-minus"></span> Pick a subject that needs to be seen and remembered <br><br>
+                                <span class="glyphicon glyphicon-minus"></span> Find the angle and lighting that brings what I'm seeing to life 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="services-container">
             <div class="container">
                 <div class="row">
@@ -98,54 +138,50 @@
                     <div class="col-md-6">
                         <div class="service-box">
                             <div class="service-title">
-                                <span class="glyphicon glyphicon-heart-empty"> </span>
+                                <span id="wedding-icon" class="glyphicon glyphicon-heart-empty"> </span>
                                 Weddings + Events
                             </div>
                             <hr>
                             <div class="service-info">
-                                I am available for weddings as well as for any other event you may be planning! When it comes to photographing people and events, I look to capture more than just smiles and faces. I endevour to find the heart and soul in where ever and what ever I'm shooting and this results in unorthodox, spur of the moment photography that captures stunning, natural moments on camera.
+                                I am available for weddings and any other occasions you may be planning! When it comes to photographing people and events, I look to capture more than just smiles and faces. I endevour to find the heart and soul in where ever and what ever I'm shooting and this results in unorthodox, spur of the moment photography that captures stunning, natural moments on camera.
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="service-box">
                             <div class="service-title">
-                                <span class="glyphicon glyphicon-print"> </span>
+                                <span id="prints-icon" class="glyphicon glyphicon-print"> </span>
                                 Prints + Calenders 
                             </div>
                             <hr>
                             <div class="service-info">
-                                I am available for weddings as well as for any other event you may be planning! When it comes to photographing people and events, I look to capture more than just smiles and faces. I endevour to find the heart and soul in where ever and what ever I'm shooting and this results in unorthodox, spur of the moment photography that captures stunning, natural moments on camera.
+                                Any of the of high quality photographs I have accrued over the years can be purchased as lavish prints. For print runs of more than 60, I can also design and produce customised calenders. Should you desire a calender designed, I offer a free consultation to develop and realise any ideas you may have with regards to subject matter or photo selection. See the gallery below for some examples of my work.
                             </div>
+                            <button id="gallery-link2" class="btn btn-default">
+                                <span class="glyphicon glyphicon-th-large"></span> Gallery
+                            </button>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="service-box">
                             <div class="service-title">
-                                <span class="glyphicon glyphicon-book"> </span>
+                                <span id="books-icon" class="glyphicon glyphicon-book"> </span>
                                 Little Books 
                             </div>
                             <hr>
                             <div class="service-info">
-                                I am available for weddings as well as for any other event you may be planning! When it comes to photographing people and events, I look to capture more than just smiles and faces. I endevour to find the heart and soul in where ever and what ever I'm shooting and this results in unorthodox, spur of the moment photography that captures stunning, natural moments on camera.
+                                My main focus recently has been shooting for and designing my own brand of photography books. The idea behind these 'Little Books' is simple: I want to capture the essence of a place, city, town or region using photos rather than words, then wrap this essence up in a quaint little book. The books make ideal gifts and sit wonderfully on bookshelves, amoungst all those other 'Big Books'! Currently I have three little books on store shelves; documenting with pictures: Hamilton, Cambridge and Raglan. <br><br>
+                                Don't hesitate to contact me should you have a region, town or city you want immortalised in a little book! As with all my work, I offer a free consultation to get the ball rolling.
                             </div>
+                            <button id="contact-link2" class="btn btn-default">
+                                <span class="glyphicon glyphicon-earphone"></span> Contact Me
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="pricing-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 centered">
-                        <div class="pricing-title">
-                            PRICING
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div id="gallery-container" ng-controller="GalleryController as galleryCtrl">
             <div class="container">
@@ -194,8 +230,6 @@
                 </div>  
             </div>
 
-
-
             <!-- PEOPLE AND EVENT GALLERY -->
             <div class="container slide-animation" id="books-gallery" ng-controller="BooksImageController as booksImageCtrl" ng-show="galleryCtrl.isSelected('books')">
                 <div class="row">
@@ -218,7 +252,6 @@
                     </div>
                 </div>  
             </div>
-
 
             <!-- MACRO GALLERY -->
             <div class="container slide-animation" id="macro-gallery" ng-controller="MacroImageController as macroImageCtrl" ng-show="galleryCtrl.isSelected('macro')">
@@ -243,6 +276,21 @@
                 </div>  
             </div>
         </div>
+
+
+        <div id="pricing-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 centered">
+                        <div class="pricing-title">
+                            PRICING
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
         <div id="contact-container">
             <div class="container">
