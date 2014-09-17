@@ -1,10 +1,10 @@
-/* line 59, style.sass */
+/* line 58, style.sass */
 html {
   width: 100%;
   height: 100%;
 }
 
-/* line 63, style.sass */
+/* line 62, style.sass */
 body {
   width: 100%;
   height: 100%;
@@ -14,24 +14,24 @@ body {
   font-weight: 300;
 }
 
-/* line 70, style.sass */
+/* line 69, style.sass */
 .reg {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
-/* line 73, style.sass */
+/* line 72, style.sass */
 .bold {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
-/* line 76, style.sass */
+/* line 75, style.sass */
 .centered {
   text-align: center;
 }
 
-/* line 79, style.sass */
+/* line 78, style.sass */
 .custom-navbar {
   border-radius: 0;
   border: none;
@@ -41,76 +41,76 @@ body {
   -moz-box-shadow: 0px 3px 8px 0px rgba(28, 51, 92, 0.57);
   box-shadow: 0px 3px 8px 0px rgba(28, 51, 92, 0.57);
 }
-/* line 85, style.sass */
+/* line 84, style.sass */
 .custom-navbar span {
   color: #0096dd;
 }
-/* line 88, style.sass */
+/* line 87, style.sass */
 .custom-navbar .collapse.navbar-collapse {
   text-align: center;
 }
-/* line 91, style.sass */
+/* line 90, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav {
   display: inline-block;
   float: none;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-/* line 95, style.sass */
+/* line 94, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 98, style.sass */
+/* line 97, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li.left-border {
   border-left: 1px solid gainsboro;
 }
-/* line 100, style.sass */
+/* line 99, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li a {
   outline: 0;
   color: #464646;
   font-size: 16px;
 }
-/* line 104, style.sass */
+/* line 103, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li a:hover {
   color: #0096dd;
 }
 
-/* line 107, style.sass */
+/* line 106, style.sass */
 .hero-container {
-  background: -moz-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
-  background: -webkit-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
-  background: -o-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
-  background: -ms-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
-  background: linear-gradient(to left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
+  background: -moz-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("images/banner.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("images/banner.jpg");
+  background: -o-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("images/banner.jpg");
+  background: -ms-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("images/banner.jpg");
+  background: linear-gradient(to left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("images/banner.jpg");
   background-attachment: fixed, fixed;
   width: 100%;
 }
-/* line 110, style.sass */
+/* line 109, style.sass */
 .hero-container .logo-container {
   padding-top: 100px;
   padding-bottom: 100px;
   padding-right: 50px;
   padding-left: 50px;
 }
-/* line 115, style.sass */
+/* line 114, style.sass */
 .hero-container .hero-info {
   color: white;
   background: none;
   padding: 20px;
 }
-/* line 119, style.sass */
+/* line 118, style.sass */
 .hero-container .hero-info p {
   font-size: 25px;
 }
-/* line 121, style.sass */
+/* line 120, style.sass */
 .hero-container .hero-info p.hero-info-heading {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 40px;
 }
 
-/* line 128, style.sass */
+/* line 127, style.sass */
 #about-container {
   -webkit-box-shadow: 0px -10px 10px 0px rgba(28, 51, 92, 0.3);
   -moz-box-shadow: 0px -10px 10px 0px rgba(28, 51, 92, 0.3);
@@ -119,22 +119,22 @@ body {
   padding-bottom: 80px;
   color: white;
 }
-/* line 133, style.sass */
+/* line 132, style.sass */
 #about-container .about-title {
   padding-top: 50px;
   padding-bottom: 10px;
   font-size: 53px;
   color: rgba(0, 33, 71, 0.92);
 }
-/* line 138, style.sass */
+/* line 137, style.sass */
 #about-container .about-box-title {
   font-size: 30px;
 }
-/* line 140, style.sass */
+/* line 139, style.sass */
 #about-container hr {
   border-width: 2px;
 }
-/* line 142, style.sass */
+/* line 141, style.sass */
 #about-container .about-box {
   padding: 15px;
   color: rgba(0, 33, 71, 0.92);
@@ -143,36 +143,36 @@ body {
   width: 100%;
   border: 3px solid rgba(0, 33, 71, 0.92);
 }
-/* line 149, style.sass */
+/* line 148, style.sass */
 #about-container .about-box hr {
   border-color: rgba(0, 33, 71, 0.92);
 }
-/* line 151, style.sass */
+/* line 150, style.sass */
 #about-container .about-box span {
   color: #0096dd;
 }
 
-/* line 157, style.sass */
+/* line 156, style.sass */
 #services-container {
   background-color: rgba(0, 33, 71, 0.92);
   width: 100%;
   padding-bottom: 80px;
 }
-/* line 161, style.sass */
+/* line 160, style.sass */
 #services-container .services-title {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 53px;
   color: white;
 }
-/* line 166, style.sass */
+/* line 165, style.sass */
 #services-container .service-box {
   padding: 20px;
   border: 2px solid white;
   margin-bottom: 30px;
   color: white;
 }
-/* line 171, style.sass */
+/* line 170, style.sass */
 #services-container .service-box #gallery-link2 {
   width: 150px;
   margin-top: 10px;
@@ -183,13 +183,13 @@ body {
   border: 1px solid white;
   background-color: #0096dd;
 }
-/* line 180, style.sass */
+/* line 179, style.sass */
 #services-container .service-box #gallery-link2:hover {
   background-color: white;
   border: 1px solid #0096dd;
   color: #0096dd;
 }
-/* line 184, style.sass */
+/* line 183, style.sass */
 #services-container .service-box #contact-link2 {
   width: 150px;
   margin-top: 10px;
@@ -200,53 +200,53 @@ body {
   border: 1px solid white;
   background-color: #0096dd;
 }
-/* line 193, style.sass */
+/* line 192, style.sass */
 #services-container .service-box #contact-link2:hover {
   background-color: white;
   border: 1px solid #0096dd;
   color: #0096dd;
 }
-/* line 197, style.sass */
+/* line 196, style.sass */
 #services-container .service-box .service-title {
   width: 100%;
   padding: 0;
   font-size: 30px;
 }
-/* line 201, style.sass */
+/* line 200, style.sass */
 #services-container .service-box .service-title #wedding-icon {
   color: #0096dd;
 }
-/* line 203, style.sass */
+/* line 202, style.sass */
 #services-container .service-box .service-title #prints-icon {
   color: #0096dd;
 }
-/* line 205, style.sass */
+/* line 204, style.sass */
 #services-container .service-box .service-title #books-icon {
   color: #0096dd;
 }
-/* line 207, style.sass */
+/* line 206, style.sass */
 #services-container .service-box hr {
   border-color: white;
   border-width: 2px;
 }
-/* line 210, style.sass */
+/* line 209, style.sass */
 #services-container .service-box .service-info {
   font-size: 20px;
 }
 
-/* line 217, style.sass */
+/* line 216, style.sass */
 #gallery-container {
   width: 100%;
   color: rgba(0, 33, 71, 0.92);
   padding-bottom: 80px;
 }
-/* line 221, style.sass */
+/* line 220, style.sass */
 #gallery-container .gallery-title {
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 53px;
 }
-/* line 226, style.sass */
+/* line 225, style.sass */
 #gallery-container .gallery-nav .btn {
   width: 150px;
   margin-top: 10px;
@@ -256,87 +256,87 @@ body {
   color: white;
   border: 1px solid rgba(0, 33, 71, 0.92);
 }
-/* line 234, style.sass */
+/* line 233, style.sass */
 #gallery-container .gallery-nav .btn.vista-btn {
   background-color: #0096dd;
 }
-/* line 236, style.sass */
+/* line 235, style.sass */
 #gallery-container .gallery-nav .btn.books-btn {
   background-color: #0096dd;
 }
-/* line 238, style.sass */
+/* line 237, style.sass */
 #gallery-container .gallery-nav .btn.macro-btn {
   background-color: #0096dd;
 }
-/* line 240, style.sass */
+/* line 239, style.sass */
 #gallery-container .gallery-nav .btn:hover {
   color: #0096dd;
   border: 1px solid #0096dd;
   background-color: white;
 }
-/* line 245, style.sass */
+/* line 244, style.sass */
 #gallery-container .gallery-row .orange-border {
   border: 6px solid #0096dd;
 }
-/* line 247, style.sass */
+/* line 246, style.sass */
 #gallery-container .gallery-row .blue-border {
   border: 6px solid #0096dd;
 }
-/* line 249, style.sass */
+/* line 248, style.sass */
 #gallery-container .gallery-row .purple-border {
   border: 6px solid #0096dd;
 }
-/* line 252, style.sass */
+/* line 251, style.sass */
 #gallery-container .gallery-row .gallery-heading h3 {
   font-size: 22px;
 }
-/* line 254, style.sass */
+/* line 253, style.sass */
 #gallery-container .thumbnail-row {
   margin-top: 10px;
 }
-/* line 256, style.sass */
+/* line 255, style.sass */
 #gallery-container .thumbnail-row a {
   outline: 0;
 }
-/* line 258, style.sass */
+/* line 257, style.sass */
 #gallery-container .thumbnail-row .thumbnail {
   padding: 3px;
   border-radius: 0;
 }
-/* line 261, style.sass */
+/* line 260, style.sass */
 #gallery-container .thumbnail-row .thumbnail img {
   width: 100%;
 }
 
-/* line 264, style.sass */
+/* line 263, style.sass */
 .image-active-vista {
   border: 3px solid #0096dd;
 }
 
-/* line 266, style.sass */
+/* line 265, style.sass */
 .image-active-books {
   border: 3px solid #0096dd;
 }
 
-/* line 268, style.sass */
+/* line 267, style.sass */
 .image-active-macro {
   border: 3px solid #0096dd;
 }
 
-/* line 273, style.sass */
+/* line 272, style.sass */
 #pricing-container {
   width: 100%;
   background-color: rgba(0, 33, 71, 0.92);
   padding-bottom: 50px;
   color: white;
 }
-/* line 278, style.sass */
+/* line 277, style.sass */
 #pricing-container .pricing-title {
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 53px;
 }
-/* line 283, style.sass */
+/* line 282, style.sass */
 #pricing-container .pricing-box .pricing-box-title {
   font-size: 35px;
   padding-top: 15px;
@@ -347,18 +347,18 @@ body {
   width: 100%;
   margin-top: 20px;
 }
-/* line 292, style.sass */
+/* line 291, style.sass */
 #pricing-container .pricing-box .pricing-box-info {
   width: 100%;
   border: 2px solid white;
   padding: 20px;
   font-size: 20px;
 }
-/* line 297, style.sass */
+/* line 296, style.sass */
 #pricing-container .pricing-box .pricing-box-info span {
   color: #0096dd;
 }
-/* line 299, style.sass */
+/* line 298, style.sass */
 #pricing-container .pricing-box .pricing-box-info .pricing-box-info-title {
   font-size: 26px;
   color: #0096dd;
@@ -366,48 +366,48 @@ body {
   text-align: center;
 }
 
-/* line 308, style.sass */
+/* line 307, style.sass */
 #contact-container {
   width: 100%;
   padding-bottom: 50px;
   color: rgba(0, 33, 71, 0.92);
 }
-/* line 312, style.sass */
+/* line 311, style.sass */
 #contact-container .contact-title {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 53px;
 }
-/* line 316, style.sass */
+/* line 315, style.sass */
 #contact-container .contact-info {
   font-size: 23px;
 }
 
-/* line 323, style.sass */
+/* line 322, style.sass */
 .show-animation.ng-hide-remove {
   -webkit-transition: 1s linear all;
   transition: 1s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 328, style.sass */
+/* line 327, style.sass */
 .show-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 332, style.sass */
+/* line 331, style.sass */
 .show-gallery-animation.ng-hide-remove {
   -webkit-transition: 3s linear all;
   transition: 3s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 337, style.sass */
+/* line 336, style.sass */
 .show-gallery-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 341, style.sass */
+/* line 340, style.sass */
 .b {
   border: 1px solid red;
 }
