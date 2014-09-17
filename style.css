@@ -1,10 +1,10 @@
-/* line 58, style.sass */
+/* line 59, style.sass */
 html {
   width: 100%;
   height: 100%;
 }
 
-/* line 62, style.sass */
+/* line 63, style.sass */
 body {
   width: 100%;
   height: 100%;
@@ -14,24 +14,24 @@ body {
   font-weight: 300;
 }
 
-/* line 69, style.sass */
+/* line 70, style.sass */
 .reg {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
-/* line 72, style.sass */
+/* line 73, style.sass */
 .bold {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
-/* line 75, style.sass */
+/* line 76, style.sass */
 .centered {
   text-align: center;
 }
 
-/* line 78, style.sass */
+/* line 79, style.sass */
 .custom-navbar {
   border-radius: 0;
   border: none;
@@ -41,42 +41,42 @@ body {
   -moz-box-shadow: 0px 3px 8px 0px rgba(28, 51, 92, 0.57);
   box-shadow: 0px 3px 8px 0px rgba(28, 51, 92, 0.57);
 }
-/* line 84, style.sass */
+/* line 85, style.sass */
 .custom-navbar span {
   color: #0096dd;
 }
-/* line 87, style.sass */
+/* line 88, style.sass */
 .custom-navbar .collapse.navbar-collapse {
   text-align: center;
 }
-/* line 90, style.sass */
+/* line 91, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav {
   display: inline-block;
   float: none;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-/* line 94, style.sass */
+/* line 95, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 97, style.sass */
+/* line 98, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li.left-border {
   border-left: 1px solid gainsboro;
 }
-/* line 99, style.sass */
+/* line 100, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li a {
   outline: 0;
   color: #464646;
   font-size: 16px;
 }
-/* line 103, style.sass */
+/* line 104, style.sass */
 .custom-navbar .collapse.navbar-collapse .nav.navbar-nav li a:hover {
   color: #0096dd;
 }
 
-/* line 106, style.sass */
+/* line 107, style.sass */
 .hero-container {
   background: -moz-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
   background: -webkit-linear-gradient(left, rgba(0, 33, 71, 0.2) 100%, rgba(0, 33, 71, 0.2) 100%), url("static/images/banner.jpg");
@@ -86,31 +86,31 @@ body {
   background-attachment: fixed, fixed;
   width: 100%;
 }
-/* line 109, style.sass */
+/* line 110, style.sass */
 .hero-container .logo-container {
   padding-top: 100px;
   padding-bottom: 100px;
   padding-right: 50px;
   padding-left: 50px;
 }
-/* line 114, style.sass */
+/* line 115, style.sass */
 .hero-container .hero-info {
   color: white;
   background: none;
   padding: 20px;
 }
-/* line 118, style.sass */
+/* line 119, style.sass */
 .hero-container .hero-info p {
   font-size: 25px;
 }
-/* line 120, style.sass */
+/* line 121, style.sass */
 .hero-container .hero-info p.hero-info-heading {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 40px;
 }
 
-/* line 127, style.sass */
+/* line 128, style.sass */
 #about-container {
   -webkit-box-shadow: 0px -10px 10px 0px rgba(28, 51, 92, 0.3);
   -moz-box-shadow: 0px -10px 10px 0px rgba(28, 51, 92, 0.3);
@@ -119,61 +119,60 @@ body {
   padding-bottom: 80px;
   color: white;
 }
-/* line 132, style.sass */
+/* line 133, style.sass */
 #about-container .about-title {
   padding-top: 50px;
   padding-bottom: 10px;
   font-size: 53px;
-  color: #787878;
+  color: rgba(0, 33, 71, 0.92);
 }
-/* line 137, style.sass */
+/* line 138, style.sass */
 #about-container .about-box-title {
   font-size: 30px;
 }
-/* line 139, style.sass */
+/* line 140, style.sass */
 #about-container hr {
   border-width: 2px;
 }
-/* line 141, style.sass */
-#about-container #about-box-1 {
-  font-size: 20px;
+/* line 142, style.sass */
+#about-container .about-box {
   padding: 15px;
-  width: 100%;
-  background-color: #0096dd;
-  border: 3px solid #eb7300;
+  color: rgba(0, 33, 71, 0.92);
+  font-size: 20px;
   margin-top: 40px;
+  width: 100%;
+  border: 3px solid rgba(0, 33, 71, 0.92);
 }
-/* line 148, style.sass */
-#about-container #about-box-2 {
-  padding: 15px;
-  font-size: 20px;
-  margin-top: 40px;
-  width: 100%;
-  border: 3px solid #0096dd;
-  background-color: #eb7300;
+/* line 149, style.sass */
+#about-container .about-box hr {
+  border-color: rgba(0, 33, 71, 0.92);
+}
+/* line 151, style.sass */
+#about-container .about-box span {
+  color: #0096dd;
 }
 
-/* line 159, style.sass */
+/* line 157, style.sass */
 #services-container {
-  background-color: #0096dd;
+  background-color: rgba(0, 33, 71, 0.92);
   width: 100%;
   padding-bottom: 80px;
 }
-/* line 163, style.sass */
+/* line 161, style.sass */
 #services-container .services-title {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 53px;
   color: white;
 }
-/* line 168, style.sass */
+/* line 166, style.sass */
 #services-container .service-box {
   padding: 20px;
   border: 2px solid white;
   margin-bottom: 30px;
   color: white;
 }
-/* line 173, style.sass */
+/* line 171, style.sass */
 #services-container .service-box #gallery-link2 {
   width: 150px;
   margin-top: 10px;
@@ -182,9 +181,15 @@ body {
   outline: none;
   color: white;
   border: 1px solid white;
-  background-color: #b645ba;
+  background-color: #0096dd;
 }
-/* line 182, style.sass */
+/* line 180, style.sass */
+#services-container .service-box #gallery-link2:hover {
+  background-color: white;
+  border: 1px solid #0096dd;
+  color: #0096dd;
+}
+/* line 184, style.sass */
 #services-container .service-box #contact-link2 {
   width: 150px;
   margin-top: 10px;
@@ -193,63 +198,55 @@ body {
   outline: none;
   color: white;
   border: 1px solid white;
-  background-color: #eb7300;
+  background-color: #0096dd;
 }
-/* line 191, style.sass */
+/* line 193, style.sass */
+#services-container .service-box #contact-link2:hover {
+  background-color: white;
+  border: 1px solid #0096dd;
+  color: #0096dd;
+}
+/* line 197, style.sass */
 #services-container .service-box .service-title {
   width: 100%;
   padding: 0;
   font-size: 30px;
 }
-/* line 195, style.sass */
-#services-container .service-box .service-title #wedding-icon {
-  color: #52d64d;
-}
-/* line 197, style.sass */
-#services-container .service-box .service-title #prints-icon {
-  color: #b645ba;
-}
-/* line 199, style.sass */
-#services-container .service-box .service-title #books-icon {
-  color: #eb7300;
-}
 /* line 201, style.sass */
+#services-container .service-box .service-title #wedding-icon {
+  color: #0096dd;
+}
+/* line 203, style.sass */
+#services-container .service-box .service-title #prints-icon {
+  color: #0096dd;
+}
+/* line 205, style.sass */
+#services-container .service-box .service-title #books-icon {
+  color: #0096dd;
+}
+/* line 207, style.sass */
 #services-container .service-box hr {
   border-color: white;
   border-width: 2px;
 }
-/* line 204, style.sass */
+/* line 210, style.sass */
 #services-container .service-box .service-info {
   font-size: 20px;
 }
 
-/* line 210, style.sass */
-#pricing-container {
-  width: 100%;
-  background-color: #0096dd;
-  padding-bottom: 50px;
-  color: white;
-}
-/* line 215, style.sass */
-#pricing-container .pricing-title {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 53px;
-}
-
-/* line 223, style.sass */
+/* line 217, style.sass */
 #gallery-container {
   width: 100%;
-  color: #787878;
+  color: rgba(0, 33, 71, 0.92);
   padding-bottom: 80px;
 }
-/* line 227, style.sass */
+/* line 221, style.sass */
 #gallery-container .gallery-title {
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 53px;
 }
-/* line 232, style.sass */
+/* line 226, style.sass */
 #gallery-container .gallery-nav .btn {
   width: 150px;
   margin-top: 10px;
@@ -257,114 +254,160 @@ body {
   border-radius: 0;
   outline: none;
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(0, 33, 71, 0.92);
 }
-/* line 240, style.sass */
+/* line 234, style.sass */
 #gallery-container .gallery-nav .btn.vista-btn {
-  background-color: #eb7300;
+  background-color: #0096dd;
 }
-/* line 242, style.sass */
+/* line 236, style.sass */
 #gallery-container .gallery-nav .btn.books-btn {
-  background-color: #b645ba;
+  background-color: #0096dd;
 }
-/* line 244, style.sass */
+/* line 238, style.sass */
 #gallery-container .gallery-nav .btn.macro-btn {
   background-color: #0096dd;
 }
-/* line 246, style.sass */
+/* line 240, style.sass */
 #gallery-container .gallery-nav .btn:hover {
   color: #0096dd;
   border: 1px solid #0096dd;
   background-color: white;
 }
-/* line 251, style.sass */
+/* line 245, style.sass */
 #gallery-container .gallery-row .orange-border {
-  border: 6px solid #eb7300;
+  border: 6px solid #0096dd;
 }
-/* line 253, style.sass */
+/* line 247, style.sass */
 #gallery-container .gallery-row .blue-border {
   border: 6px solid #0096dd;
 }
-/* line 255, style.sass */
+/* line 249, style.sass */
 #gallery-container .gallery-row .purple-border {
-  border: 6px solid #b645ba;
+  border: 6px solid #0096dd;
 }
-/* line 258, style.sass */
+/* line 252, style.sass */
 #gallery-container .gallery-row .gallery-heading h3 {
   font-size: 22px;
 }
-/* line 260, style.sass */
+/* line 254, style.sass */
 #gallery-container .thumbnail-row {
   margin-top: 10px;
 }
-/* line 262, style.sass */
+/* line 256, style.sass */
 #gallery-container .thumbnail-row a {
   outline: 0;
 }
-/* line 264, style.sass */
+/* line 258, style.sass */
 #gallery-container .thumbnail-row .thumbnail {
   padding: 3px;
   border-radius: 0;
 }
-/* line 267, style.sass */
+/* line 261, style.sass */
 #gallery-container .thumbnail-row .thumbnail img {
   width: 100%;
 }
 
-/* line 270, style.sass */
+/* line 264, style.sass */
 .image-active-vista {
-  border: 3px solid #eb7300;
+  border: 3px solid #0096dd;
 }
 
-/* line 272, style.sass */
+/* line 266, style.sass */
 .image-active-books {
-  border: 3px solid #b645ba;
+  border: 3px solid #0096dd;
 }
 
-/* line 274, style.sass */
+/* line 268, style.sass */
 .image-active-macro {
   border: 3px solid #0096dd;
 }
 
-/* line 279, style.sass */
+/* line 273, style.sass */
+#pricing-container {
+  width: 100%;
+  background-color: rgba(0, 33, 71, 0.92);
+  padding-bottom: 50px;
+  color: white;
+}
+/* line 278, style.sass */
+#pricing-container .pricing-title {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 53px;
+}
+/* line 283, style.sass */
+#pricing-container .pricing-box .pricing-box-title {
+  font-size: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 292, style.sass */
+#pricing-container .pricing-box .pricing-box-info {
+  width: 100%;
+  border: 2px solid white;
+  padding: 20px;
+  font-size: 20px;
+}
+/* line 297, style.sass */
+#pricing-container .pricing-box .pricing-box-info span {
+  color: #0096dd;
+}
+/* line 299, style.sass */
+#pricing-container .pricing-box .pricing-box-info .pricing-box-info-title {
+  font-size: 26px;
+  color: #0096dd;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 308, style.sass */
+#contact-container {
+  width: 100%;
+  padding-bottom: 50px;
+  color: rgba(0, 33, 71, 0.92);
+}
+/* line 312, style.sass */
+#contact-container .contact-title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 53px;
+}
+/* line 316, style.sass */
+#contact-container .contact-info {
+  font-size: 23px;
+}
+
+/* line 323, style.sass */
 .show-animation.ng-hide-remove {
   -webkit-transition: 1s linear all;
   transition: 1s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 284, style.sass */
+/* line 328, style.sass */
 .show-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 288, style.sass */
+/* line 332, style.sass */
 .show-gallery-animation.ng-hide-remove {
   -webkit-transition: 3s linear all;
   transition: 3s linear all;
   display: block !important;
   opacity: 1;
 }
-/* line 293, style.sass */
+/* line 337, style.sass */
 .show-gallery-animation.ng-hide {
   opacity: 0;
 }
 
-/* line 298, style.sass */
-#contact-container {
-  width: 100%;
-  background-color: #0096dd;
-  padding-bottom: 50px;
-  color: white;
-}
-/* line 303, style.sass */
-#contact-container .contact-title {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 53px;
-}
-
-/* line 309, style.sass */
+/* line 341, style.sass */
 .b {
   border: 1px solid red;
 }

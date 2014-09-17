@@ -6,6 +6,7 @@ $medium-col: rgb(120,120,120)
 $dark-col: rgb(70,70,70)
 $darker-col: rgb(40,40,40)
 $blue-col: rgb(0, 150, 221)
+$dark-blue-col: rgba(0,33,71,0.92)
 $purple-col: rgb(182, 69, 186)
 $orange-col: rgb(235, 115, 0)
 $green-col: rgb(82,214,77)
@@ -133,31 +134,28 @@ body
 		padding-top: 50px
 		padding-bottom: 10px
 		font-size: 53px
-		color: $medium-col
+		color: $dark-blue-col
 	.about-box-title
 		font-size: 30px
 	hr
 		border-width: 2px
-	#about-box-1
-		font-size: 20px
+	.about-box
 		padding: 15px
-		width: 100%
-		background-color: $blue-col
-		border: 3px solid $orange-col
-		margin-top: 40px
-	#about-box-2
-		padding: 15px
+		color: $dark-blue-col
 		font-size: 20px
 		margin-top: 40px
 		width: 100%
-		border: 3px solid $blue-col
-		background-color: $orange-col
+		border: 3px solid $dark-blue-col
+		hr
+			border-color: $dark-blue-col
+		span	
+			color: $blue-col
 
 
 
 
 #services-container
-	background-color: $blue-col
+	background-color: $dark-blue-col
 	width: 100%
 	padding-bottom: 80px
 	.services-title
@@ -178,7 +176,11 @@ body
 			outline: none
 			color: white
 			border: 1px solid white
-			background-color: $purple-col
+			background-color: $blue-col
+			&:hover
+				background-color: white
+				border: 1px solid $blue-col
+				color: $blue-col
 		#contact-link2
 			width: 150px
 			margin-top: 10px
@@ -187,17 +189,21 @@ body
 			outline: none
 			color: white
 			border: 1px solid white
-			background-color: $orange-col
+			background-color: $blue-col
+			&:hover
+				background-color: white
+				border: 1px solid $blue-col
+				color: $blue-col
 		.service-title
 			width: 100%
 			padding: 0
 			font-size: 30px
 			#wedding-icon
-				color: $green-col
+				color: $blue-col
 			#prints-icon
-				color: $purple-col
+				color: $blue-col
 			#books-icon
-				color: $orange-col
+				color: $blue-col
 		hr
 			border-color: white
 			border-width: 2px
@@ -207,22 +213,10 @@ body
 
 
 
-#pricing-container
-	width: 100%
-	background-color: $blue-col
-	padding-bottom: 50px
-	color: white
-	.pricing-title
-		padding-top: 50px
-		padding-bottom: 50px
-		font-size: 53px
-
-
-
 
 #gallery-container
 	width: 100%
-	color: $medium-col
+	color: $dark-blue-col
 	padding-bottom: 80px
 	.gallery-title
 		padding-top: 50px
@@ -236,11 +230,11 @@ body
 			border-radius: 0
 			outline: none
 			color: white
-			border: 1px solid white
+			border: 1px solid $dark-blue-col
 			&.vista-btn
-				background-color: $orange-col
+				background-color: $blue-col
 			&.books-btn
-				background-color: $purple-col
+				background-color: $blue-col
 			&.macro-btn
 				background-color: $blue-col
 			&:hover
@@ -249,11 +243,11 @@ body
 				background-color: white
 	.gallery-row
 		.orange-border
-			border: 6px solid $orange-col
+			border: 6px solid $blue-col
 		.blue-border
 			border: 6px solid $blue-col
 		.purple-border
-			border: 6px solid $purple-col
+			border: 6px solid $blue-col
 		.gallery-heading
 			h3
 				font-size: 22px
@@ -268,11 +262,61 @@ body
 				width: 100%
 
 .image-active-vista
-	border: 3px solid $orange-col
+	border: 3px solid $blue-col
 .image-active-books
-	border: 3px solid $purple-col
+	border: 3px solid $blue-col
 .image-active-macro
 	border: 3px solid $blue-col
+
+
+
+#pricing-container
+	width: 100%
+	background-color: $dark-blue-col
+	padding-bottom: 50px
+	color: white
+	.pricing-title
+		padding-top: 50px
+		padding-bottom: 30px
+		font-size: 53px
+	.pricing-box
+		.pricing-box-title
+			font-size: 35px
+			padding-top: 15px
+			padding-bottom: 15px
+			border-top: 2px solid white
+			border-left: 2px solid white
+			border-right: 2px solid white
+			width: 100%
+			margin-top: 20px
+		.pricing-box-info
+			width: 100%
+			border: 2px solid white
+			padding: 20px
+			font-size: 20px
+			span
+				color: $blue-col
+			.pricing-box-info-title
+				font-size: 26px
+				color: $blue-col
+				padding-bottom: 20px
+				text-align: center
+
+
+
+
+#contact-container
+	width: 100%
+	padding-bottom: 50px
+	color: $dark-blue-col
+	.contact-title
+		padding-top: 50px
+		padding-bottom: 50px
+		font-size: 53px
+	.contact-info
+		font-size: 23px
+
+
 
 // ANIMATION ///////////////////////////////////////
 .show-animation
@@ -293,18 +337,6 @@ body
 	&.ng-hide
 		opacity: 0
 ///////////////////////////////////////////////////
-
-
-#contact-container
-	width: 100%
-	background-color: $blue-col
-	padding-bottom: 50px
-	color: white
-	.contact-title
-		padding-top: 50px
-		padding-bottom: 50px
-		font-size: 53px
-
 
 .b
 	border: 1px solid red
